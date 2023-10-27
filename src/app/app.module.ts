@@ -3,10 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RoomsComponent } from './rooms/rooms.component';
+import { RoomsListComponent } from './rooms/rooms-list/rooms-list.component';
 
+//root module with info of all components
+// decorator is giving metadata to the class
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RoomsComponent,
+    RoomsListComponent
   ],
   imports: [
     BrowserModule,
@@ -15,4 +21,5 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
+// In angular all is a class
 export class AppModule { }
